@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang =ru>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+            }
+            .radius {
+  border-radius: 54px;
+  box-shadow: 0 0 5px 5px #e7d5c0;
+}
+        .section-overlay {
+            width: 100%;
+        background: url(ofice.jpg) rgba(0, 0, 0, 0.6); /* Прописываем путь к картинке и задаем цвет и прозрачность */
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        text-align:center; /* Текст по центру */
+        color: #fff; /* Цвет текста */
+        padding: 70px 0; /* Отступ сверху и снизу */
+                        }
+
+        
+        .topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #479eab;
+  color: white;
+}
+         
+    table 
+    { border-collapse: collapse;margin: auto;
+        width: 900px; /* Ширина таблицы */ 
+        box-shadow:12px 12px 2px 1px  #45909b;
+    }
+    
+    table thead tr {  margin:10px 10px; padding: 15px; color: #ffffff; font-weight: bold; background: #479eab; height:50px;width:150px;}
+    table thead tr td {margin:10px 10px; padding: 15px; border: 1px solid #e8e9eb;}
+    table tbody tr td { margin:10px 10px; padding: 15px;border: 1px solid #e8e9eb;}
+    table tbody tr:hover {background: #ebffe8;}
+    table tbody tr:nth-child(2n) {background: #d0cbcb;}
+
+    </style>
+    
+    <head>
+        <meta charset = "utf-8">
+        <title> Главная</title> <!-- Название вкладки -->
+    </head>
+    
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Список сотрудников</a>
+            <a href="employee.html">Сотрудник месяца</a>
+            <a href="add.html">Добавить сотрудника</a>
+        </div>
+        <br> <br> <br>
+        <div class="section-overlay"><p>Наш офис</p></div>
+        <br> <br> <br>
+        <div> 
+        <table> 
+            <thead>
+                <th> №</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+                <th>Должность</th>
+                <th>Телефон</th>
+                <th>E-mail</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <a href="employee.html">
+                    <th>1</th>
+                    <td>Борисов</td>
+                    <td>Борис</td>
+                    <td>Борисович</td>
+                    <td>Team Lead</td>
+                    <td>+7(912)-15-537</td>
+                    <td>borisov.b.b@mail.ru</td>
+                </a>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Иванов</td>
+                    <td>Иван</td>
+                    <td>Иванович</td>
+                    <td>C# backend-разработчик</td>
+                    <td>+7(937)-12-659</td>
+                    <td>ivanov.i.i@mail.ru</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Петров</td>
+                    <td>Сергей</td>
+                    <td>Алексеевич</td>
+                    <td>Рекрутер</td>
+                    <td>+7(999)-90-546</td>
+                    <td>petrov.s.a@mail.ru</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+       
+    </body>
+</html>
